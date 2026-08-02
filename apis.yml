@@ -1,8 +1,26 @@
 aid: warren
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/warren.png
 name: Warren
-description: 'Warren is a company surfaced as a portfolio company of qed-investors, ribbit-capital and
-  added to the API Evangelist network as a stub for enrichment. Sector: proptech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Warren (Warren Investimentos e Gestao Patrimonial) is a Brazilian digital wealth-management
+  and investment platform founded in 2017 and based in Porto Alegre. Regulated by Brazil''s Central Bank,
+  the CVM securities commission, and ANBIMA, Warren offers a goals-based, fee-only model spanning managed
+  portfolios, ETFs, fixed income, global stocks, gold and crypto, private pension plans, life insurance,
+  currency exchange, and business (PJ) accounts, plus a Warren for Business platform for investment
+  professionals. It is backed by QED Investors, Ribbit Capital, and Citi Ventures. As of this enrichment
+  pass Warren exposes no public developer API, documentation portal, or first-party SDK; its GitHub
+  organization (warrenbrasil) contains internal engineering tooling and courseware rather than a
+  consumer-facing API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/warren/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Proptech
+- Fintech
+- Investments
+- Wealth Management
+- Financial Services
+- Investment Platform
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/warren-domain-security.yml
 - type: Website
-  url: http://warren.com.br
+  url: https://warren.com.br
+- type: GitHubOrganization
+  url: https://github.com/warrenbrasil
+- type: Blog
+  url: https://warren.com.br/magazine
+- type: Support
+  url: https://faq.warren.com.br
+- type: PrivacyPolicy
+  url: https://s3.us-east-1.amazonaws.com/compliance.prd.warren.com.br/politica-privacidade.pdf
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
